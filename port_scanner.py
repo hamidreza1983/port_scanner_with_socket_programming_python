@@ -1,7 +1,7 @@
 import socket
 import threading 
 import time
-max_tr=50
+max_tr=40
 
 #insert your ip here
 ip='127.0.0.1'
