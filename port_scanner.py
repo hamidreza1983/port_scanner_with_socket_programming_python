@@ -15,7 +15,7 @@ def port_checking(ipv4:str ,port:int):
             file.write(ip+':'+str(port)+'\n')
             file.close()
     socket.close()
-#use threading for highspeed and high performance==>export test===>2===>3
+#use threading for highspeed and high performance==>export test===>2===>3===>4
 for port in range(1,10000):
     threading.Thread(target=port_checking,args=(ip,port)).start()
     while threading.active_count() >max_tr:
